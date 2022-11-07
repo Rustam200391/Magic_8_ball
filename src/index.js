@@ -16,7 +16,7 @@ function Ball() {
 }
 
 function Button(props) {
-    const { text, bgColor }=props;
+    const { text, bgColor } = props;
  
     let answers = [
         // Положительные:
@@ -41,7 +41,6 @@ function Button(props) {
         'Very doubtful'
     ];
 
-    let answer;
      
     let [ setNumber] = useState(answers);
 
@@ -49,8 +48,8 @@ function Button(props) {
 
     function magicBall() {
  
-        answer = answers[Math.floor(Math.random() * answers.length)];
-        document.getElementById('output').innerHTML = answer;
+        answers = answers[Math.floor(Math.random() * answers.length)];
+        document.getElementById('output').innerHTML = answers;
     }
 
     return (
