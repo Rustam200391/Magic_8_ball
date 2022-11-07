@@ -42,7 +42,7 @@ function Button(props) {
     ];
 
      
-    let [ setNumber] = useState(answers);
+    let [setNumber] = useState(answers);
 
     console.log(setNumber);
 
